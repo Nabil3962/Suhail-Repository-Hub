@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nabil — Projects</title>
+  <meta name="description" content="Nabil's GitHub projects (auto-fetched & cached)"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand">
+        <h1>Nabil — Projects</h1>
+        <p class="muted">Auto-fetched from GitHub · fast, cached, searchable</p>
+      </div>
+
+      <div class="controls">
+        <input id="search" placeholder="Search projects (name or description)..." aria-label="Search"/>
+        <select id="language-filter">
+          <option value="">All languages</option>
+        </select>
+        <select id="sort">
+          <option value="updated">Sort: Recently updated</option>
+          <option value="stars">Sort: Stars (desc)</option>
+          <option value="name">Sort: Name (A → Z)</option>
+        </select>
+        <button id="refresh" title="Refresh repos (force)">Refresh</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap main">
+    <aside class="sidebar">
+      <div class="box">
+        <h3>Filter by tag</h3>
+        <div id="tags" class="tags"></div>
+      </div>
+
+      <div class="box">
+        <h3>About</h3>
+        <p class="muted">Repos are fetched from GitHub for <strong>nabil3962</strong>. Caching reduces load time — use Refresh to force pull latest data.</p>
+      </div>
+    </aside>
+
+    <section class="content">
+      <div id="meta" class="meta muted">Loading projects…</div>
+      <div id="projects" class="projects" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="wrap footer muted">
+    <small>Built for <strong>nabil3962</strong> — client-side only. Deploy on Netlify, Vercel, or GitHub Pages.</small>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
